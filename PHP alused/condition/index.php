@@ -11,12 +11,17 @@ $vanus = 20;
 $kaal = 61;
 $sugu = "mees";
 
-if($sugu == "mees") {
-    echo '<p style="color: blue;">';
-} else {
-    echo '<p style="color: red;">';
+switch ($sugu) {
+    case 'mees':
+        echo '<p style ="color: blue">';
+        break;
+    case 'naine':
+        echo '<p style="color: red">';
+        break;
+    default:
+        echo '<p style="color: green">';
+        break;
 }
-
 echo "Minu eesnimi on ".$eesnimi."<br>";
 echo "Minu perekonnanimi on ".$perenimi."<br>";
 echo "Vanuseks mul ".$vanus." aastat<br>";
