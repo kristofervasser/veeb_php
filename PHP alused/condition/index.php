@@ -11,11 +11,7 @@ $vanus = 20;
 $kaal = 61;
 $sugu = "mees";
 
-if($sugu == "mees") {
-    echo '<p style="color: blue;">';
-} else {
-    echo '<p style="color: red;">';
-}
+echo ($sugu == 'mees') ? '<p style="color: blue">' : '<p style="color: red">';
 
 echo "Minu eesnimi on ".$eesnimi."<br>";
 echo "Minu perekonnanimi on ".$perenimi."<br>";
