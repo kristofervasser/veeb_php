@@ -1,19 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: kristofer.vasser
- * Date: 13.02.2019
- * Time: 14:15
- */
-$eesnimi = "Kristofer";
-$perenimi = "Vasser";
-$vanus = 20;
-$kaal = 61;
-$sugu = "mees";
+//genereerime juhuslik täisarv vahemikus 0 kuni 100
+$arv =rand(0, 100);
+//arvutame jääk 2-ga jagamisel
+$jaak = $arv % 2;
+// kontrollime kui jääk on 0 - paaris arv
+if($jaak == 0) {
+    echo '<div class="paaris">'.$arv.'</div>';
+}   else {
+    echo '<div class="paaritu">'.$arv.'</div>';
 
-echo ($sugu == 'mees') ? '<p style="color: blue">' : '<p style="color: red">';
-
-echo "Minu eesnimi on ".$eesnimi."<br>";
-echo "Minu perekonnanimi on ".$perenimi."<br>";
-echo "Vanuseks mul ".$vanus." aastat<br>";
-echo "Kaalun ".$kaal." kg<br>";
+}
