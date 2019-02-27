@@ -8,17 +8,28 @@ function failiKontroll ($failiNimi) {
 }
 
 function loeFailist($failiNimi) {
+$raamatud = array();
+$nimetused = array(
+    'nimetus',
+    'autor',
+    'keel',
+    'lk'
+);
     if(failiKontroll($failiNimi)) {
         $fp = fopen($failiNimi,  'r');
+        $raamat = array();
         while (!feof($fp)) {
             $rida = fgets($fp);
             if (trim($rida) == '') {
-                        echo '===================<br>';
-                    } else {
-                        echo $rida.'<br>';
+                $raamat[] = $rida;
+            } else {
+                $raamat = array_combine($nimetused, $raamat);
+                $raamatud[] = $raamat;
+                $raamat = array();
             }
         }
     }
+    return $raamatud;
 }
 
 function tabelFailist($failiNimi)  {
