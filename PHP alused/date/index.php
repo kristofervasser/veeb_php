@@ -64,5 +64,4 @@ if($kellTundidesHetkel >= 8 and $kellTundidesHetkel < 13){
     echo 'Tere päevast!';
 } else {
     echo 'Tere õhtust!';
-
 }
