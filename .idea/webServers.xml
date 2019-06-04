@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="10a1064a-d9e8-4372-b3cd-721c68d8fd1e" name="ikt" url="http://vasserkristofer.ikt.khk.ee">
-        <fileTransfer host="vasserkristofer.ikt.khk.ee" port="22" rootFolder="/home/vasserkristoferi" accessType="SFTP">
+      <webServer id="10a1064a-d9e8-4372-b3cd-721c68d8fd1e" name="ikt" url="http://stenerikk.ikt.khk.ee">
+        <fileTransfer host="stenerikk.ikt.khk.ee" port="22" rootFolder="/home/stenerikkiktkhk" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
